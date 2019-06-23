@@ -1,0 +1,21 @@
+const video = require('./video')
+const users = require('./users')
+const signature = require('./signature')
+const comment = require('./comment')
+const contacts = require('./contacts')
+const danmu = require('./danmu')
+const upload = require('./upload')
+const write = require('./write')
+const source = require('./source')
+
+module.exports = function(app){
+  app.use('/api/video', video)
+  app.use('/api/users', users)
+  app.use('/api/signature', signature)
+  app.use('/api/comment', comment)
+  app.use('/api/contacts', contacts)
+  app.use('/api/danmu', danmu)
+  app.use('/api/upload', upload)
+  app.use('/api/write', write)
+  app.use('/upload', source)
+}
