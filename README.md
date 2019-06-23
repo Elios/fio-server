@@ -6,7 +6,7 @@
 
 ## Mongodb as database
 
-## start server
+start server with nodemon
 `
 npm run auto
 `
